@@ -13,14 +13,14 @@ Research objective:
 
 **Customer Analytics - Telecom Churn Analysis**
 
-Problem statement: How can the telco leverage historical customer data to identify key factors associated with customer churn, determine which customer segments are most likely to leave, and develop a predictive model to identify customers at high risk of churning? Based on these insights, what targeted customer retention strategies can the telco implement to reduce its churn rate?
+Problem statement: How can the telco leverage historical customer data to identify key factors associated with customer churn, determine customer segments with higher churn rates and develop a predictive model to identify customers at high risk of churning?  Based on these insights, what targeted customer retention strategies can be recommended to reduce customer churn?
 
 Research objective:
-- To identify the key factors associated with customer churn using historical customer data.
-- To identify customer segments with the highest churn rates and the greatest number of churned customers.
-- To examine the relationship between customer tenure and churn to identify patterns in customer attrition.
-- To develop and evaluate a predictive model for identifying customers at high risk of churning.
-- To recommend targeted customer retention strategies based on the findings from the churn analysis and predictive modelling.
+- To identify the key customer characteristics and factors associated with customer churn using historical customer data - Understand the factors associated with churn, such as contract type, monthly charges, payment method and service subscriptions, where these variables are available.
+- To identify customer segments with the highest churn rates and the greatest number of churned customers - Distinguish between segments with a high proportion of customers leaving and segments contributing the largest number of churned customers
+- To examine the relationship between customer tenure and churn to identify patterns in customer attrition across different stages of the customer lifecycle - Understand whether churn is concentrated among newer customers or occurs throughout the customer lifecycle
+- To develop and evaluate a predictive model to identify customers at high risk of churning - Assess the model's ability to identify customers who are likely to leave, using appropriate performance metrics
+- To recommend targeted customer retention strategies based on the findings from the churn analysis and predictive modelling - Translate the analytical findings into actionable strategies for different customer segments and customers identified as being at high risk of churn
 
 **Transport & Mobility Analytics - Singapore MRT Analytics**
 
