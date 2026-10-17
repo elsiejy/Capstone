@@ -1,4 +1,4 @@
-# Capstone
+# Elsie's Capstone
 
 Project
 1. Hospitality Analytics - Hotel Bookings
