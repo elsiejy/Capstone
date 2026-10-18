@@ -67,5 +67,4 @@ https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sh
 
 ## 📔 Data Dictionary
 
-Data set1Bookings.csv
-This dataset contains information about the prevalence of mental health disorders in countries across the globe.
+
