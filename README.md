@@ -34,9 +34,16 @@ Research objective:
 - Recommend strategies to improve public transport service planning and resource allocation
 
 
-**Hotel Booking Dataset**
+## Hotel Booking Dataset
 ----
-This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment.
+This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment
+
+## Dataset overview
+
+File name: hotel_booking_clean.csv
+Time Horizon: July 2015 - August 2017
+Target Category: Bookings
+Key Entities: Customer, Booking, Market Segment, Booking Channel
 
 Link to Jupyter Notebook in Google Colab:
 https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sharing
