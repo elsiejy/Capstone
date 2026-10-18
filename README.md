@@ -40,12 +40,32 @@ Research objective:
 ## Hotel Booking Dataset 📊 ####
 
 This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment
-## Dataset overview
 
-- File name: hotel_booking_clean.csv
+## 🎯 Research objective
+
+1.  **Analyse seasonal booking patterns and demand fluctuations**  
+    To examine historical hotel booking trends over time and identify seasonality in booking volumes e.g., peak season and off peak period
+2.  **Identify the hotel's key customer segments and booking characteristics**  
+    To analyse booking data by customer type, market segment, distribution channel, country of origin and other available data points to identify the hotel's major customer segments and understand their booking characteristics
+3.  **Analyse booking cancellation patterns and rates**  
+    To investigate historical cancellation rates across different time periods, customer segments, market segments and distribution channels to identify groups or periods with higher cancellation rates
+4.  **Identify booking characteristics associated with cancellations**  
+    To examine the relationships between booking cancellations and relevant booking characteristics, such as lead time, deposit type, customer type, market segment, previous cancellations or requests to determine which factors are associated with a higher likelihood of cancellation
+5.  **Recommend data-driven strategies to optimise booking management and reduce cancellations**  
+    To develop recommendations based on the findings to improve demand planning, optimise booking strategies and implement targeted measures to reduce cancellations
+
+## ℹ️ Dataset overview
+
+
+- File name: Bookings.csv, Customer Types.csv, Hotels.csv, Market Segments.csv, Reservation Status.csv
 - Time Horizon: July 2015 - August 2017
 - Target Category: Bookings
 - Key Entities: Customer, Booking, Market Segment, Booking Channel
 
 Link to Jupyter Notebook in Google Colab:
 https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sharing
+
+## 📔 Data Dictionary
+
+Data set1Bookings.csv
+This dataset contains information about the prevalence of mental health disorders in countries across the globe.
