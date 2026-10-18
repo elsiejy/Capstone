@@ -1,4 +1,4 @@
-**Prepared by: Elsie**
+**Prepared by: Elsie**  
 **Dataset used: Hotel Bookings**
 
 ## Topic selection
