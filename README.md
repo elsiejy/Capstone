@@ -1,5 +1,5 @@
 **Topic selection**
-
+-------
 **Option 1: Hospitality Analytics - Hotel Bookings**
 
 Problem statement:How can the hotel use historical booking data to identify seasonal demand fluctuations and booking characteristics associated with cancellations in order to optimise booking strategies, manage demand and reduce booking cancellations?
