@@ -32,3 +32,11 @@ Research objective:
 - Station comparisons - Compare ridership across MRT/LRT stations (where is demand concentrated)
 - Changes in station ridership - Identification of changing demand patterns
 - Recommend strategies to improve public transport service planning and resource allocation
+
+
+**Hotel Booking Dataset**
+----
+This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment.
+
+Link to Jupyter Notebook in Google Colab:
+https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sharing
