@@ -3,12 +3,11 @@
 
 ## Hotel Booking Dataset 📊 ####
 
-This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment. Out of 119,390 booking records
+The dataset contains 119,390 hotel reservations of which 43,017 were cancelled representing an overall cancellation rate of 36.03%. This establishes the baseline for investigating whether cancellation risk varies across hotel types, market segments, distribution channels and booking characteristics.
 
 ## 🤔 Problem statement
 
-How can the hotel use historical reservation data to identify market, channel, arrival-period, and booking profiles associated with a high risk of cancellation, and develop a pre-arrival cancellation-risk model to support targeted booking, deposit-policy, and inventory-management decisions? (based on the data for booking between 1 July 2015 - 31 August 2017, 37% of the booking were cancelled)
-
+How can the hotel use historical reservation data to identify market, channel, arrival-period, and booking profiles associated with a high risk of cancellation, and develop a pre-arrival cancellation-risk model to support targeted booking, deposit-policy, and inventory-management decisions?
 
 ## 🎯 Research objective
 
