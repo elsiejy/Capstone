@@ -39,20 +39,20 @@ Research objective:
 
 ## Hotel Booking Dataset 📊 ####
 
-This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment
+This repository contains a transactional dataset capturing hotel bookings between 2015 to 2027. The data includes granular details on booking details, customer type and market segment. Out of 119,390 booking records
+
+## 🤔 Problem statement
+
+How can the hotel use historical reservation data to identify market, channel, arrival-period, and booking profiles associated with a high risk of cancellation, and develop a pre-arrival cancellation-risk model to support targeted booking, deposit-policy, and inventory-management decisions? (based on the data for booking between 1 July 2015 - 31 August 2017, 37% of the booking were cancelled)
+
 
 ## 🎯 Research objective
 
-1.  **Analyse seasonal booking patterns and demand fluctuations**  
-    To examine historical hotel booking trends over time and identify seasonality in booking volumes e.g., peak season and off peak period
-2.  **Identify the hotel's key customer segments and booking characteristics**  
-    To analyse booking data by customer type, market segment, distribution channel, country of origin and other available data points to identify the hotel's major customer segments and understand their booking characteristics
-3.  **Analyse booking cancellation patterns and rates**  
-    To investigate historical cancellation rates across different time periods, customer segments, market segments and distribution channels to identify groups or periods with higher cancellation rates
-4.  **Identify booking characteristics associated with cancellations**  
-    To examine the relationships between booking cancellations and relevant booking characteristics, such as lead time, deposit type, customer type, market segment, previous cancellations or requests to determine which factors are associated with a higher likelihood of cancellation
-5.  **Recommend data-driven strategies to optimise booking management and reduce cancellations**  
-    To develop recommendations based on the findings to improve demand planning, optimise booking strategies and implement targeted measures to reduce cancellations
+1.  Analyse reservation volumes and cancellation rates by hotel, arrival period, market segment, and distribution channel
+2.  Identify booking characteristics associated with cancellation, including lead time, deposit type, customer type, stay length, party composition, booking changes, and special requests.
+3.  Examine whether recorded wait-list days are associated with cancellation after accounting for other available booking characteristics.
+4.  Compare repeat-guest indicators and previous booking history across market segments as proxies for repeat-booking behaviour.
+5.  Develop and evaluate a time-based cancellation-risk model using only information available before the reservation outcome, then identify high-volume, high-risk booking profiles for operational action
 
 ## ℹ️ Dataset overview
 
