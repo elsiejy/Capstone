@@ -17,7 +17,7 @@ How can the hotel use historical reservation data to identify market, channel, a
 4.  Compare repeat-guest share and previous booking history across market segments, and test whether repeat guests cancel less within each segment.
 5.  Identify booking profiles with a high cancellation rate (≥ 50%) and substantial volume (≥ 1,000 bookings), and recommend targeted cancellation-risk strategies.
 
-### Target definition
+##### Target definition
 is_canceled = True covers both Canceled (43,017) and No-Show (1,207) reservations which account for 44,224 bookings or 37.04% (36.03% is the rate for the Canceled status alone)
 
 ## 🔮 Predictive analysis
