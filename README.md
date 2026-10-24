@@ -1,21 +1,15 @@
 **Prepared by: Elsie**  
 **Dataset used: Hotel Bookings**
 
-**Table of content**
-- Problem Statement
-- Research Objective
-- Dataset & Definitions
-- Data Cleansing and Exploratory Data Analysis (EDA)
-- Data Visualization (PowerBI)
-- Predictive Analysis(host on streamlit)
-- Insights and Recommendation
+#### Table of content
+<!-- toc-name: Custom Name; -->
 
 ---
 ## Hotel Booking Dataset 📊 ####
-
+---
 The dataset contains 119,390 hotel reservations of which 43,017 were cancelled representing an overall cancellation rate of 36.03%. This establishes the baseline for investigating whether cancellation risk varies across hotel types, market segments, distribution channels and booking characteristics.
 
-## 🤔 Problem statement
+## 🤔 Problem statement <a name="problem"></a>
 
 How can the hotel use historical reservation data to identify market, channel, arrival-period and booking profiles associated with a high risk of cancellation and develop a pre-arrival cancellation-risk model to support targeted booking, deposit-policy and inventory-management decisions?
 
@@ -47,7 +41,7 @@ https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sh
 
 
 
-### Definitions
+## Definitions
 
 ##### Market segment (`market_segment`): who the booking came from
 
@@ -78,12 +72,9 @@ https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sh
 | **Contract**        | Covered by an allotment or other contract between the hotel and a company or agent                                             |
 #### Meal plan (`meal`)
 
-| Term          | Meaning                                                              |
-| ------------- | -------------------------------------------------------------------- |
-| **BB**        | Bed & Breakfast: room plus breakfast.                                |
-| **HB**        | Half Board: breakfast plus one other meal, usually dinner.           |
-| **FB**        | Full Board: breakfast, lunch and dinner.                             |
-| **SC**        | Self Catering: room only, no meals.                                  |
-
-
-
+| Term   | Meaning                                                    |
+| ------ | ---------------------------------------------------------- |
+| **BB** | Bed & Breakfast: room plus breakfast.                      |
+| **HB** | Half Board: breakfast plus one other meal, usually dinner. |
+| **FB** | Full Board: breakfast, lunch and dinner.                   |
+| **SC** | Self Catering: room only, no meals.                        |
