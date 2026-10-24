@@ -2,13 +2,13 @@
 **Dataset used: Hotel Bookings**
 
 #### Table of content <a name="tc"></a>
-1. [Problem statement](#problem)
-2. [Research objective](#research)
-3. [Dataset](#dataset)
-4. [Data cleansing & Exploratory Data Analysis](#eda)
-5. [Dashboard](#dashboard)
-6. [Predictive analysis](#ml)
-7. [Insights & recommendation](#insights)
+- [Problem statement](#problem)
+- [Research objective](#research)
+- [Dataset](#dataset)
+- [Data cleansing & Exploratory Data Analysis](#eda)
+- [Dashboard](#dashboard)
+- [Predictive analysis](#ml)
+- [Insights & recommendation](#insights)
 
 ---
 ## Hotel Booking Dataset 📊 ####
@@ -28,7 +28,10 @@ How can the hotel use historical reservation data to identify market, channel, a
 4.  Compare repeat-guest share and previous booking history across market segments, and test whether repeat guests cancel less within each segment.
 5.  Identify booking profiles with a high cancellation rate (≥ 50%) and substantial volume (≥ 1,000 bookings), and recommend targeted cancellation-risk strategies.
 
-Target definition: is_canceled = True covers both Canceled (43,017) and No-Show (1,207) reservations which account for 44,224 bookings or 37.04% (36.03% is the rate for the Canceled status alone)
+
+> [!NOTE]
+> Target definition: is_canceled = True covers both Canceled (43,017) and No-Show (1,207) reservations which account for 44,224 bookings or 37.04% (36.03% is the rate for the Canceled status alone)
+
 <sub>[back to top](#tc)</sub>
 ## ℹ️ Dataset <a name="dataset"></a>
 
