@@ -5,7 +5,8 @@
 - [Problem statement](#problem)
 - [Research objective](#research)
 - [Dataset](#dataset)
-- [Data cleansing & Exploratory Data Analysis](#eda)
+- [Data cleansing](#clean)
+- [Exploratory Data Analysis](#eda)
 - [Dashboard](#dashboard)
 - [Predictive analysis](#ml)
 - [Insights & recommendation](#insights)
@@ -44,7 +45,7 @@ How can the hotel use historical reservation data to identify market, channel, a
 Link to Jupyter Notebook in Google Colab:
 https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sharing
 
-## 📔 Data Dictionary
+## 📔 Dataset
 
 1. **Bookings.csv** (119,390 rows, one per reservation) — the main fact table and the source of the target variable `is_canceled` (1 = cancelled or no-show). It holds the booking characteristics such as lead time, arrival date, length of stay, party composition, repeat-guest history, booking changes, special requests, waiting-list days and average daily rate. It links to the four reference tables through `Hotel_ID`, `Market_Segment_ID`, `Customer_Type_ID` and `Reservation_ID`.
 
@@ -55,23 +56,6 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 4. **Customer_Types.csv** (36 rows) — combines the customer type (Transient, Transient-Party, Group, Contract), the deposit policy (No Deposit, Non Refund, Refundable) and the meal plan.
 
 5. **Reservation_Status.csv** (3 rows) — the final outcome of each booking: Check-Out, Canceled or No-Show.
-
-### Data cleansing
-
-1. Observation from bookings dataset
-     - There are a total of 119,390 booking records
-     - Hotel_ID, Market_Segment_ID, Customer_Type_ID, Reservation_ID are foreign keys
-     - NULL values exist in children, country, agent, company
-     - reservation_status_date data type should be date time
-     - children, agent, and company should be int
-     - is_repeated_guest and is_canceled should be boolean
-2. Observation from other dataset: No empty values as they are mainly reference tables
-3. Data cleansing performed on bookings dataset to:
-     - Derive check-in date (arrival_date_year + arrival_date_month + arrival_date_day_of_month)
-     - Update data type for reservation_status_date to date time
-     - Update data type for is_repeated_guest and is_canceled to boolean
-     - Update data type for children, agent and company to int
-     - Handle NULL values for children, country, agent, company
 
 ### Definitions
 
@@ -111,8 +95,23 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 | **FB** | Full Board: breakfast, lunch and dinner.                   |
 | **SC** | Self Catering: room only, no meals.                        |
 <sub>[back to top](#tc)</sub>
-## 🧼 Data cleansing & Exploratory Data Analysis (EDA) <a name="eda"></a>
+## 🧼 Data cleansing <a name="clean"></a>
+1. Observation from bookings dataset
+     - There are a total of 119,390 booking records
+     - Hotel_ID, Market_Segment_ID, Customer_Type_ID, Reservation_ID are foreign keys
+     - NULL values exist in children, country, agent, company
+     - reservation_status_date data type should be date time
+     - children, agent, and company should be int
+     - is_repeated_guest and is_canceled should be boolean
+2. Observation from other dataset: No empty values as they are mainly reference tables
+3. Data cleansing performed on bookings dataset to:
+     - Derive check-in date (arrival_date_year + arrival_date_month + arrival_date_day_of_month)
+     - Update data type for reservation_status_date to date time
+     - Update data type for is_repeated_guest and is_canceled to boolean
+     - Update data type for children, agent and company to int
+     - Handle NULL values for children, country, agent, company
 <sub>[back to top](#tc)</sub>
+## Exploratory Data Analysis (EDA) <a name="eda"></a>
 ## 📈 Dashboard <a name="dashboard"></a>
 <sub>[back to top](#tc)</sub>
 ## 🔮 Predictive analysis <a name="ml"></a>
