@@ -12,7 +12,6 @@
 
 ---
 ## Hotel Booking Dataset 📊 ####
----
 The dataset contains 119,390 hotel reservations of which 43,017 were cancelled representing an overall cancellation rate of 36.03%. This establishes the baseline for investigating whether cancellation risk varies across hotel types, market segments, distribution channels and booking characteristics.
 
 <sub>[back to top](#tc)</sub>
