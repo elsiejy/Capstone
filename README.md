@@ -47,19 +47,19 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 
 ### Data dictionary
 
-1. **Bookings.csv** (119,390 rows, one per reservation)
+1. **Bookings.csv** (119,390 rows, one per reservation)  
    The main fact table and the source of the target variable `is_canceled` (1 = cancelled or no-show). It holds the booking characteristics such as lead time, arrival date, length of stay, party composition, repeat-guest history, booking changes, special requests, waiting-list days and average daily rate. It links to the four reference tables through `Hotel_ID`, `Market_Segment_ID`, `Customer_Type_ID` and `Reservation_ID`.
 
-3. **Hotels.csv** (2 rows)
+3. **Hotels.csv** (2 rows)  
    Identifies each booking's hotel type (City Hotel or Resort Hotel) so cancellation rates and risk profiles can be compared between the two properties.
 
-5. **Market_Segments.csv** (26 rows)
+5. **Market_Segments.csv** (26 rows)  
    Records how each booking was acquired: the market segment e.g. Online TA, Groups, Direct, Corporate and the distribution channel it came through e.g. TA/TO, Direct, GDS. This is used to identify which acquisition sources carry the highest cancellation risk.
 
-7. **Customer_Types.csv** (36 rows)
+7. **Customer_Types.csv** (36 rows)  
    Combines the customer type (Transient, Transient-Party, Group, Contract), the deposit policy (No Deposit, Non Refund, Refundable) and the meal plan.
 
-9. **Reservation_Status.csv** (3 rows)
+9. **Reservation_Status.csv** (3 rows)  
     The final outcome of each booking: Check-Out, Canceled or No-Show.
 
 ### Definitions
