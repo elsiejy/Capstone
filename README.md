@@ -35,7 +35,7 @@ How can the hotel use historical reservation data to identify market, channel, a
 > Target definition: is_canceled = True covers both Canceled (43,017) and No-Show (1,207) reservations which account for 44,224 bookings or 37.04% (36.03% is the rate for the Canceled status alone)
 
 <sub>[back to top](#tc)</sub>
-## ℹ️ Dataset <a name="dataset"></a>
+## 📔 Dataset <a name="dataset"></a>
 
 - File name: bookings_final.csv
 - Time Horizon: July 2015 - August 2017
@@ -45,7 +45,7 @@ How can the hotel use historical reservation data to identify market, channel, a
 Link to Jupyter Notebook in Google Colab:
 https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sharing
 
-## 📔 Dataset
+### Data dictionary
 
 1. **Bookings.csv** (119,390 rows, one per reservation) — the main fact table and the source of the target variable `is_canceled` (1 = cancelled or no-show). It holds the booking characteristics such as lead time, arrival date, length of stay, party composition, repeat-guest history, booking changes, special requests, waiting-list days and average daily rate. It links to the four reference tables through `Hotel_ID`, `Market_Segment_ID`, `Customer_Type_ID` and `Reservation_ID`.
 
@@ -94,7 +94,9 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 | **HB** | Half Board: breakfast plus one other meal, usually dinner. |
 | **FB** | Full Board: breakfast, lunch and dinner.                   |
 | **SC** | Self Catering: room only, no meals.                        |
+
 <sub>[back to top](#tc)</sub>
+
 ## 🧼 Data cleansing <a name="clean"></a>
 1. Observation from bookings dataset
      - There are a total of 119,390 booking records
@@ -110,6 +112,8 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
      - Update data type for is_repeated_guest and is_canceled to boolean
      - Update data type for children, agent and company to int
      - Handle NULL values for children, country, agent, company
+
+
 <sub>[back to top](#tc)</sub>
 ## Exploratory Data Analysis (EDA) <a name="eda"></a>
 ## 📈 Dashboard <a name="dashboard"></a>
