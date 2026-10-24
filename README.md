@@ -1,7 +1,7 @@
 **Prepared by: Elsie**  
 **Dataset used: Hotel Bookings**
 
-#### Table of content
+#### Table of content <a name="tc"></a>
 1. [Problem statement](#problem)
 2. [Research objective](#research)
 3. [Dataset](#dataset)
@@ -15,10 +15,12 @@
 ---
 The dataset contains 119,390 hotel reservations of which 43,017 were cancelled representing an overall cancellation rate of 36.03%. This establishes the baseline for investigating whether cancellation risk varies across hotel types, market segments, distribution channels and booking characteristics.
 
+<sub>[back to top](#tc)</sub>
 ## 🤔 Problem statement <a name="problem"></a>
 
 How can the hotel use historical reservation data to identify market, channel, arrival-period and booking profiles associated with a high risk of cancellation and develop a pre-arrival cancellation-risk model to support targeted booking, deposit-policy and inventory-management decisions?
 
+<sub>[back to top](#tc)</sub>
 ## 🎯 Research objective - Description analysis <a name="research"></a>
 
 1.  Analyse reservation volumes and cancellation rates by hotel type, arrival period, market segment and distribution channel.
@@ -28,7 +30,7 @@ How can the hotel use historical reservation data to identify market, channel, a
 5.  Identify booking profiles with a high cancellation rate (≥ 50%) and substantial volume (≥ 1,000 bookings), and recommend targeted cancellation-risk strategies.
 
 Target definition: is_canceled = True covers both Canceled (43,017) and No-Show (1,207) reservations which account for 44,224 bookings or 37.04% (36.03% is the rate for the Canceled status alone)
-
+<sub>[back to top](#tc)</sub>
 ## ℹ️ Dataset <a name="dataset"></a>
 
 - File name: bookings_clean
@@ -80,12 +82,17 @@ https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sh
 | **HB** | Half Board: breakfast plus one other meal, usually dinner. |
 | **FB** | Full Board: breakfast, lunch and dinner.                   |
 | **SC** | Self Catering: room only, no meals.                        |
-
----
+<sub>[back to top](#tc)</sub>
 ## 🧼 Data cleansing & Exploratory Data Analysis (EDA) <a name="eda"></a>
+<sub>[back to top](#tc)</sub>
 ## 📈 Dashboard <a name="dashboard"></a>
+<sub>[back to top](#tc)</sub>
 ## 🔮 Predictive analysis <a name="ml"></a>
+Build and evaluate a time-based cancellation-risk model using only information available before the outcome and translate scores into action tiers
+
+<sub>[back to top](#tc)</sub>
 
 ## 📈 Insights & recommendation <a name="insights"></a>
+<sub>[back to top](#tc)</sub>
 
-Build and evaluate a time-based cancellation-risk model using only information available before the outcome and translate scores into action tiers
+
