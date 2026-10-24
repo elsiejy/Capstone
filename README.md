@@ -36,3 +36,12 @@ https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sh
 ## 📔 Data Dictionary
 
 
+
+## Sequence
+1. Clean data
+2. Generate visualisation for the different RO
+3. Do power BI
+4. Presentation
+5. How to let others use my model
+
+
