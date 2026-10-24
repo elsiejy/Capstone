@@ -2,6 +2,7 @@
 **Dataset used: Hotel Bookings**
 
 #### Table of content
+[Problem statement](#problem)
 This site was built using [GitHub Pages](https://pages.github.com/).
 
 ---
