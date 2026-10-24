@@ -2,9 +2,9 @@
 **Dataset used: Hotel Bookings**
 
 **Table of content**
-- Problem statement
+- Problem Statement
 - Research Objective
-- Dataset overview & Definitions
+- Dataset & definitions
 - Exploratory Data Analysis (EDA)
 - Data Visualization
 - Predictive analysis
