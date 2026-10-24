@@ -2,7 +2,7 @@
 **Dataset used: Hotel Bookings**
 
 #### Table of content
-<!-- toc-name: Custom Name; -->
+This site was built using [GitHub Pages](https://pages.github.com/).
 
 ---
 ## Hotel Booking Dataset 📊 ####
