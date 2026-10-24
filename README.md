@@ -12,7 +12,8 @@
 
 ---
 ## Hotel Booking Dataset 📊 ####
-The dataset contains 119,390 hotel reservations of which 43,017 were cancelled representing an overall cancellation rate of 36.03%. This establishes the baseline for investigating whether cancellation risk varies across hotel types, market segments, distribution channels and booking characteristics.
+
+The dataset comprises 119,390 hotel reservations across two hotel types: City Hotel (79,330 bookings) and Resort Hotel (40,060 bookings). The check-in dates span from July 2015 to August 2017. Of the total reservations, 44,224 were not fulfilled including 43,017 cancellations and 1,207 no-shows resulting in an overall cancellation rate of 37.04%. This provides a baseline for further analysis to determine whether cancellation rates vary by hotel type, market segment, distribution channel and booking characteristics.
 
 <sub>[back to top](#tc)</sub>
 ## 🤔 Problem statement <a name="problem"></a>
@@ -35,19 +36,27 @@ How can the hotel use historical reservation data to identify market, channel, a
 <sub>[back to top](#tc)</sub>
 ## ℹ️ Dataset <a name="dataset"></a>
 
-- File name: bookings_clean
+- File name: bookings_final.csv
 - Time Horizon: July 2015 - August 2017
 - Target Category: Bookings
 - Key Entities: Customer, Booking, Market Segment, Booking Channel
 
 Link to Jupyter Notebook in Google Colab:
-https://colab.research.google.com/drive/168JyWdrVqyX05fLt2Pwlso-BhbiR0CPI?usp=sharing
+https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sharing
 
 ## 📔 Data Dictionary
 
+1. **Bookings.csv** (119,390 rows, one per reservation) — the main fact table and the source of the target variable `is_canceled` (1 = cancelled or no-show). It holds the booking characteristics such as lead time, arrival date, length of stay, party composition, repeat-guest history, booking changes, special requests, waiting-list days and average daily rate. It links to the four reference tables through `Hotel_ID`, `Market_Segment_ID`, `Customer_Type_ID` and `Reservation_ID`.
 
+2. **Hotels.csv** (2 rows) — identifies each booking's hotel type (City Hotel or Resort Hotel) so cancellation rates and risk profiles can be compared between the two properties.
 
-## Definitions
+3. **Market_Segments.csv** (26 rows) — records how each booking was acquired: the market segment e.g. Online TA, Groups, Direct, Corporate and the distribution channel it came through e.g. TA/TO, Direct, GDS. This is used to identify which acquisition sources carry the highest cancellation risk.
+
+4. **Customer_Types.csv** (36 rows) — combines the customer type (Transient, Transient-Party, Group, Contract), the deposit policy (No Deposit, Non Refund, Refundable) and the meal plan.
+
+5. **Reservation_Status.csv** (3 rows) — the final outcome of each booking: Check-Out, Canceled or No-Show.
+
+### Definitions
 
 ##### Market segment (`market_segment`): who the booking came from
 
