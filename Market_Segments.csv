@@ -1,0 +1,27 @@
+Market_Segment_ID,market_segment,distribution_channel
+1,Direct,Direct
+2,Corporate,Corporate
+3,Online TA,TA/TO
+4,Offline TA/TO,TA/TO
+5,Complementary,Direct
+6,Direct,TA/TO
+7,Groups,Direct
+8,Groups,Corporate
+9,Offline TA/TO,Direct
+10,Groups,TA/TO
+11,Corporate,Direct
+12,Complementary,TA/TO
+13,Complementary,Corporate
+14,Direct,Corporate
+15,Corporate,TA/TO
+16,Online TA,Direct
+17,Online TA,Corporate
+18,Direct,Undefined
+19,Offline TA/TO,Corporate
+20,Undefined,Undefined
+21,Online TA,Undefined
+22,Online TA,GDS
+23,Aviation,Corporate
+24,Offline TA/TO,GDS
+25,Aviation,TA/TO
+26,Direct,GDS
