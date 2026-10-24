@@ -4,11 +4,11 @@
 **Table of content**
 - Problem Statement
 - Research Objective
-- Dataset & definitions
-- Data cleansing Exploratory Data Analysis (EDA)
-- Data Visualization
-- Predictive analysis(host on streamlit)
-- Insights and recommendation
+- Dataset & Definitions
+- Data Cleansing and Exploratory Data Analysis (EDA)
+- Data Visualization (PowerBI)
+- Predictive Analysis(host on streamlit)
+- Insights and Recommendation
 
 ---
 ## Hotel Booking Dataset 📊 ####
