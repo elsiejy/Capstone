@@ -56,6 +56,23 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 
 5. **Reservation_Status.csv** (3 rows) — the final outcome of each booking: Check-Out, Canceled or No-Show.
 
+### Data cleansing
+
+1. Observation from bookings dataset
+     - There are a total of 119,390 booking records
+     - Hotel_ID, Market_Segment_ID, Customer_Type_ID, Reservation_ID are foreign keys
+     - NULL values exist in children, country, agent, company
+     - reservation_status_date data type should be date time
+     - children, agent, and company should be int
+     - is_repeated_guest and is_canceled should be boolean
+2. Observation from other dataset: No empty values as they are mainly reference tables
+3. Data cleansing performed on bookings dataset to:
+     - Derive check-in date (arrival_date_year + arrival_date_month + arrival_date_day_of_month)
+     - Update data type for reservation_status_date to date time
+     - Update data type for is_repeated_guest and is_canceled to boolean
+     - Update data type for children, agent and company to int
+     - Handle NULL values for children, country, agent, company
+
 ### Definitions
 
 ##### Market segment (`market_segment`): who the booking came from
