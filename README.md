@@ -5,9 +5,9 @@
 - Problem Statement
 - Research Objective
 - Dataset & definitions
-- Exploratory Data Analysis (EDA)
+- Data cleansing Exploratory Data Analysis (EDA)
 - Data Visualization
-- Predictive analysis
+- Predictive analysis(host on streamlit)
 - Insights and recommendation
 
 ---
