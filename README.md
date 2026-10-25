@@ -122,7 +122,8 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 ## Exploratory Data Analysis (EDA) <a name="eda"></a>
 ## 📈 Dashboard <a name="dashboard"></a>
 
-<img width="1154" height="649" alt="image" src="https://github.com/user-attachments/assets/e3e49a10-3874-4540-aa95-38f4b1af95a5" />
+<img width="1156" height="651" alt="image" src="https://github.com/user-attachments/assets/c8b79046-00fd-4d3c-be4a-fff56635a3d8" />
+
 
 <sub>[back to top](#tc)</sub>
 ## 🔮 Predictive analysis <a name="ml"></a>
