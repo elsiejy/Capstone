@@ -121,6 +121,9 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 <sub>[back to top](#tc)</sub>
 ## Exploratory Data Analysis (EDA) <a name="eda"></a>
 ## 📈 Dashboard <a name="dashboard"></a>
+
+<img width="1154" height="649" alt="image" src="https://github.com/user-attachments/assets/e3e49a10-3874-4540-aa95-38f4b1af95a5" />
+
 <sub>[back to top](#tc)</sub>
 ## 🔮 Predictive analysis <a name="ml"></a>
 Build and evaluate a time-based cancellation-risk model using only information available before the outcome and translate scores into action tiers
