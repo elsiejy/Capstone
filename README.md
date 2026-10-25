@@ -62,7 +62,7 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 9. **Reservation_Status.csv** (3 rows)  
     The final outcome of each booking: Check-Out, Canceled or No-Show.
 
-### Definitions
+#### Definitions
 ##### Market segment (`market_segment`): who the booking came from
 
 | Term              | Meaning                                                                                                                                                               |
