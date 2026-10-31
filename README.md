@@ -1,5 +1,5 @@
 # Hotel Booking Cancellation Analysis
-The following capstone project uses historical reservation data to find which bookings are most likely to cancel and builds a model that predicts cancellation risk at the time of booking
+The following uses historical reservation data to find which bookings are most likely to cancel and builds a model that predicts cancellation risk at the time of booking
 
 #### Table of content <a name="tc"></a>
 - [Problem statement](#problem)
