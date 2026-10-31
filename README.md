@@ -1,6 +1,8 @@
 # Hotel Booking Cancellation Analysis
 The following uses historical reservation data to find which bookings are most likely to cancel and builds a model that predicts cancellation risk at the time of booking
 
+Streamlit: https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
+
 #### Table of content <a name="tc"></a>
 - [Problem statement](#problem)
 - [Research objective](#research)
@@ -147,7 +149,24 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 
 <sub>[back to top](#tc)</sub>
 ## 🔮 Predictive analysis <a name="ml"></a>
-Build and evaluate a time-based cancellation-risk model using only information available before the outcome and translate scores into action tiers
+
+Objective: To develop a model that can predict whether a hotel booking is likely to be cancelled at the time of booking.
+
+The model uses historical booking data to predict two possible outcomes:
+1 = Cancelled: The guest cancels the booking
+0 = Not Cancelled: The booking is not cancelled
+
+Feature used for prediction:
+Based on descriptive analysis, the following features were selected as a booking characteristics associated with cancellation
+
+Target: is_canceled (1 = cancelled, 0 = not cancelled)
+Features: 5 features chosen from descriptive findings using information known at the time of booking:
+
+deposit_type: Non Refund cancels 99% (RO2)
+lead_time: The earlier the booking, the higher the cancellation rate (RO2)
+market_segment	Groups and Online TA cancel the most (RO1)
+total_of_special_requests	Guests with special requests cancel much less (RO2)
+hotel	City Hotel cancels more than Resort Hotel (RO1)
 
 Streamlit: https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
 
