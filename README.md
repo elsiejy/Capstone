@@ -20,9 +20,7 @@ The dataset comprises 119,390 hotel reservations across two hotel types: City Ho
 <sub>[back to top](#tc)</sub>
 ## 🤔 Problem statement <a name="problem"></a>
 
-Nearly **37% of hotel bookings are cancelled or result in no-shows** putting approximately **$16.7 million in potential room revenue at risk**.
-
-How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation rates and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
+Nearly 37% of hotel bookings are cancelled or result in no-shows** putting approximately $16.7 million in potential room revenue at risk. How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation rates and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
 
 The findings will help hotels make better decisions on booking management, deposit policies, and room availability to reduce potential revenue losses.
 
