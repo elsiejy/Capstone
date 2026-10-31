@@ -1,7 +1,7 @@
 # Hotel Booking Cancellation Analysis
 The following uses historical reservation data to find which bookings are most likely to cancel and builds a model that predicts cancellation risk at the time of booking
 
-👉 Interact with the model via Streamlit: [Click here](https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app)
+👉 Interact with the model via Streamlit: [Click here](https://capstone-tqruvmtq4hdj2dyydrqggv.streamlit.app)
 
 #### Table of content <a name="tc"></a>
 - [Problem statement](#problem)
@@ -42,13 +42,17 @@ The findings will help hotels make better decisions on booking management, depos
 <sub>[back to top](#tc)</sub>
 ## 📔 Dataset <a name="dataset"></a>
 
-- File name: bookings_final.csv
-- Time Horizon: July 2015 - August 2017
-- Target Category: Bookings
-- Key Entities: Customer, Booking, Market Segment, Booking Channel
+### 🗃️ Repository structure <a name="repo"></a>
+
+- README.md
+- Source dataset: Bookings.csv, Hotels.csv, Market_Segments.csv, Customer_Types.csv, Reservation_Status.csv
+- Python notebook (Google Colab): Capstone_final.ipynb
+- Cleaned dataset for Power BI dashboard: Capstone Hotel Booking.pbix
+- Interactive Power BI dashboard: Capstone Hotel Booking.pbix
+- Trained model: cancellation_model.pkl
+- Files for streamlit: cancellation_model.pkl, app.py, requirements.txt
 
 Link to Jupyter Notebook in Google Colab:
-https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sharing
 
 ### Data dictionary
 
@@ -106,20 +110,6 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 | **FB** | Full Board: breakfast, lunch and dinner.                   |
 | **SC** | Self Catering: room only, no meals.                        |
 
-<sub>[back to top](#tc)</sub>
-
-## 🗃️ Repository structure <a name="repo"></a>
-
-├── README.md
-├── Bookings.csv, Hotels.csv, Market_Segments.csv,
-│   Customer_Types.csv, Reservation_Status.csv   # source data
-├── bookings_final.csv             # Cleanse data for dashboard
-├── Capstone.ipynb                 # Part 1: descriptive analysis (RO1–RO5)
-│                                  # Part 2: predictive analysis
-├── Capstone Hotel Booking.pbix    # Power BI dashboard
-├── cancellation_model.pkl         # Trained model (Random Forest)
-├── app.py                         # For Streamlit
-└── requirements.txt               # For Streamlit
 
 <sub>[back to top](#tc)</sub>
 
