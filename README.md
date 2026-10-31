@@ -120,7 +120,7 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 
 <sub>[back to top](#tc)</sub>
 ## Exploratory Data Analysis (EDA) <a name="eda"></a>
-## 📈 Dashboard <a name="dashboard"></a>
+## 📈 Power BI Dashboard <a name="dashboard"></a>
 
 <img width="1156" height="651" alt="image" src="https://github.com/user-attachments/assets/c8b79046-00fd-4d3c-be4a-fff56635a3d8" />
 
