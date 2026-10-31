@@ -10,6 +10,7 @@
 - [Dashboard](#dashboard)
 - [Predictive analysis](#ml)
 - [Insights & recommendation](#insights)
+- [Streamlit](#streamlit)
 
 ---
 ## Hotel Booking Dataset 📊 ####
@@ -131,8 +132,9 @@ Build and evaluate a time-based cancellation-risk model using only information a
 
 <sub>[back to top](#tc)</sub>
 
-## 📈 Insights & recommendation <a name="insights"></a>
+## 📈 Findings, insights & recommendation <a name="insights"></a>
 
+Findings from RO
 R01:City Hotel received about two-thirds of all bookings and has a higher cancellation rate than Resort Hotel throughout the year. Bookings made via Travel agents and tour operators (TA/TO) handle close to 82% of bookings and have a cancellation rate of 41.0%. While online TA accounts for the largest market segment, group bookings have the highest cancellation rate  
 R02: Deposit type is the strongest single signal (Non Refund 99%) followed by lead time (City: 12% at 0–7 days → 71% at 366+ days), 
 previous cancellations, market segment and special requests (no requests 48% vs ≤22% with one or more)  
@@ -145,3 +147,6 @@ R05: 	After profiling all the bookings, 2 profiles have the highest risk of canc
 <sub>[back to top](#tc)</sub>
 
 
+## 🌐 Streamlit <a name="streamlit"></a>
+https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
+<sub>[back to top](#tc)</sub>
