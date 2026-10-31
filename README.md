@@ -7,8 +7,6 @@ The following uses historical reservation data to find which bookings are most l
 - [Problem statement](#problem)
 - [Research objective](#research)
 - [Dataset](#dataset)
-- [Repository structure](#repo)
-- [Data cleansing](#clean)
 - [Exploratory Data Analysis](#eda)
 - [Dashboard](#dashboard)
 - [Predictive analysis](#ml)
@@ -22,7 +20,7 @@ The dataset comprises 119,390 hotel reservations across two hotel types: City Ho
 <sub>[back to top](#tc)</sub>
 ## 🤔 Problem statement <a name="problem"></a>
 
-Nearly 37% of hotel bookings are cancelled or result in no-shows** putting approximately $16.7 million in potential room revenue at risk. How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation rates and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
+Nearly 37% of hotel bookings are cancelled or result in no-shows putting approximately $16.7 million in potential room revenue at risk. How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation rates and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
 
 The findings will help hotels make better decisions on booking management, deposit policies, and room availability to reduce potential revenue losses.
 
@@ -42,7 +40,7 @@ The findings will help hotels make better decisions on booking management, depos
 <sub>[back to top](#tc)</sub>
 ## 📔 Dataset <a name="dataset"></a>
 
-### 🗃️ Repository structure <a name="repo"></a>
+### Repository structure
 
 - README.md
 - Source dataset: Bookings.csv, Hotels.csv, Market_Segments.csv, Customer_Types.csv, Reservation_Status.csv
@@ -51,8 +49,6 @@ The findings will help hotels make better decisions on booking management, depos
 - Interactive Power BI dashboard: Capstone Hotel Booking.pbix
 - Trained model: cancellation_model.pkl
 - Files for streamlit: cancellation_model.pkl, app.py, requirements.txt
-
-Link to Jupyter Notebook in Google Colab:
 
 ### Data dictionary
 
@@ -70,8 +66,6 @@ Link to Jupyter Notebook in Google Colab:
 
 9. **Reservation_Status.csv** (3 rows)  
     The final outcome of each booking: Check-Out, Canceled or No-Show.
-
-   
 
 #### Definitions
 ##### Market segment (`market_segment`): who the booking came from
@@ -113,7 +107,8 @@ Link to Jupyter Notebook in Google Colab:
 
 <sub>[back to top](#tc)</sub>
 
-## 🧼 Data cleansing <a name="clean"></a>
+## Exploratory Data Analysis (EDA) <a name="eda"></a>
+### Data cleansing
 1. Observation from bookings dataset
      - There are a total of 119,390 booking records
      - Hotel_ID, Market_Segment_ID, Customer_Type_ID, Reservation_ID are foreign keys
@@ -129,9 +124,6 @@ Link to Jupyter Notebook in Google Colab:
      - Update data type for children, agent and company to int
      - Handle NULL values for children, country, agent, company
 
-
-<sub>[back to top](#tc)</sub>
-## Exploratory Data Analysis (EDA) <a name="eda"></a>
 ## 📈 Power BI Dashboard <a name="dashboard"></a>
 
 <img width="1156" height="651" alt="image" src="https://github.com/user-attachments/assets/c8b79046-00fd-4d3c-be4a-fff56635a3d8" />
@@ -145,7 +137,9 @@ Link to Jupyter Notebook in Google Colab:
 The model uses historical booking data to predict two possible outcomes:
 - **1 = Cancelled:** The guest cancels the booking
 - **0 = Not Cancelled:** The booking is not cancelled
-##### Factors Used for Prediction
+
+
+### Factors Used for Prediction
 
 Based on the earlier descriptive analysis, five factors were selected because they may help predict whether a booking will be cancelled and this information is available when the booking is made.
 
@@ -156,6 +150,7 @@ Based on the earlier descriptive analysis, five factors were selected because th
 | **Market Segment**    | Group bookings and bookings made through online travel agents have higher cancellation rates |
 | **Special Requests**  | Customers who make special requests are less likely to cancel their bookings                 |
 | **Hotel Type**        | City Hotels have higher cancellation rates than Resort Hotels                                |
+
 ### Information Excluded from the Model
 
 Certain booking characteristic such as the final booking status, the date the status was recorded and the number of booking changes are excluded.
@@ -170,7 +165,6 @@ This information may only become available after the booking is made or its outc
 4. **Compare model performance:** Measured how accurately each model predicted cancellations including how many cancellations it correctly identified and how many predictions were incorrect.
 5. **Compared different feature:** Tested four combinations of booking factors using the same model and data split to see which combination produced the best results.
 6. **Deployed the final model:** Saved the Random Forest model and made it available through a Streamlit web application, allowing users to enter booking details and obtain a cancellation-risk prediction.
-    
 
 ### Expected Outcome
 
