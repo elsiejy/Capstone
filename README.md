@@ -1,16 +1,16 @@
-**Prepared by: Elsie**  
-**Dataset used: Hotel Bookings**
+# Hotel Booking Cancellation Analysis
+The following capstone project uses historical reservation data to find which bookings are most likely to cancel and builds a model that predicts cancellation risk at the time of booking
 
 #### Table of content <a name="tc"></a>
 - [Problem statement](#problem)
 - [Research objective](#research)
 - [Dataset](#dataset)
+- [Repository structure](#repo)
 - [Data cleansing](#clean)
 - [Exploratory Data Analysis](#eda)
 - [Dashboard](#dashboard)
 - [Predictive analysis](#ml)
 - [Insights & recommendation](#insights)
-- [Streamlit](#streamlit)
 
 ---
 ## Hotel Booking Dataset 📊 ####
@@ -20,7 +20,11 @@ The dataset comprises 119,390 hotel reservations across two hotel types: City Ho
 <sub>[back to top](#tc)</sub>
 ## 🤔 Problem statement <a name="problem"></a>
 
-How can the hotel use historical reservation data to identify market, channel, arrival-period and booking profiles associated with a high risk of cancellation and develop a pre-arrival cancellation-risk model to support targeted booking, deposit-policy and inventory-management decisions?
+Nearly **37% of hotel bookings are cancelled or result in no-shows** putting approximately **$16.7 million in potential room revenue at risk**.
+
+How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation rates and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
+
+The findings will help hotels make better decisions on booking management, deposit policies, and room availability to reduce potential revenue losses.
 
 <sub>[back to top](#tc)</sub>
 ## 🎯 Research objective - Description analysis <a name="research"></a>
@@ -63,6 +67,8 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 9. **Reservation_Status.csv** (3 rows)  
     The final outcome of each booking: Check-Out, Canceled or No-Show.
 
+   
+
 #### Definitions
 ##### Market segment (`market_segment`): who the booking came from
 
@@ -102,6 +108,21 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 
 <sub>[back to top](#tc)</sub>
 
+## 🗃️ Repository structure <a name="repo"></a>
+
+├── README.md
+├── Bookings.csv, Hotels.csv, Market_Segments.csv,
+│   Customer_Types.csv, Reservation_Status.csv   # source data
+├── bookings_final.csv             # Cleanse data for dashboard
+├── Capstone.ipynb                 # Part 1: descriptive analysis (RO1–RO5)
+│                                  # Part 2: predictive analysis
+├── Capstone Hotel Booking.pbix    # Power BI dashboard
+├── cancellation_model.pkl         # Trained model (Random Forest)
+├── app.py                         # For Streamlit
+└── requirements.txt               # For Streamlit
+
+<sub>[back to top](#tc)</sub>
+
 ## 🧼 Data cleansing <a name="clean"></a>
 1. Observation from bookings dataset
      - There are a total of 119,390 booking records
@@ -130,6 +151,9 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 ## 🔮 Predictive analysis <a name="ml"></a>
 Build and evaluate a time-based cancellation-risk model using only information available before the outcome and translate scores into action tiers
 
+Streamlit: https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
+
+
 <sub>[back to top](#tc)</sub>
 
 ## 📈 Findings, insights & recommendation <a name="insights"></a>
@@ -144,9 +168,4 @@ R05: 	After profiling all the bookings, 2 profiles have the highest risk of canc
 - City Hotel + Non-refundable + Group booking
 - City Hotel + Online TA + booked 31–365 days ahead.
 
-<sub>[back to top](#tc)</sub>
-
-
-## 🌐 Streamlit <a name="streamlit"></a>
-https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
 <sub>[back to top](#tc)</sub>
