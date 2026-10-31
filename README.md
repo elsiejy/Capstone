@@ -1,7 +1,7 @@
 # Hotel Booking Cancellation Analysis
 The following uses historical reservation data to find which bookings are most likely to cancel and builds a model that predicts cancellation risk at the time of booking
 
-Streamlit: https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
+Interact with the model(Streamlit): https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
 
 #### Table of content <a name="tc"></a>
 - [Problem statement](#problem)
