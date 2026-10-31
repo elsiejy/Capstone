@@ -150,25 +150,41 @@ https://colab.research.google.com/drive/1VG-cGkziLcWcOZKMRUB-KtkdLOVLJ2tT?usp=sh
 <sub>[back to top](#tc)</sub>
 ## 🔮 Predictive analysis <a name="ml"></a>
 
-Objective: To develop a model that can predict whether a hotel booking is likely to be cancelled at the time of booking.
+**Objective:** To develop a model that can predict whether a hotel booking is likely to be cancelled before the guest arrives.
 
 The model uses historical booking data to predict two possible outcomes:
-1 = Cancelled: The guest cancels the booking
-0 = Not Cancelled: The booking is not cancelled
+- **1 = Cancelled:** The guest cancels the booking
+- **0 = Not Cancelled:** The booking is not cancelled
+##### Factors Used for Prediction
 
-Feature used for prediction:
-Based on descriptive analysis, the following features were selected as a booking characteristics associated with cancellation
+Based on the earlier descriptive analysis, five factors were selected because they may help predict whether a booking will be cancelled and this information is available when the booking is made.
 
-Target: is_canceled (1 = cancelled, 0 = not cancelled)
-Features: 5 features chosen from descriptive findings using information known at the time of booking:
+| Factor                | Why it was selected                                                                          |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| **Deposit Type**      | Group with Non-Refunded deposit type is more likely to cancel                                |
+| **Booking Lead Time** | Customers who book further in advance are more likely to cancel                              |
+| **Market Segment**    | Group bookings and bookings made through online travel agents have higher cancellation rates |
+| **Special Requests**  | Customers who make special requests are less likely to cancel their bookings                 |
+| **Hotel Type**        | City Hotels have higher cancellation rates than Resort Hotels                                |
+### Information Excluded from the Model
 
-deposit_type: Non Refund cancels 99% (RO2)
-lead_time: The earlier the booking, the higher the cancellation rate (RO2)
-market_segment	Groups and Online TA cancel the most (RO1)
-total_of_special_requests	Guests with special requests cancel much less (RO2)
-hotel	City Hotel cancels more than Resort Hotel (RO1)
+Certain booking characteristic such as the final booking status, the date the status was recorded and the number of booking changes are excluded.
 
-Streamlit: https://capstone-bq9blrvs95rrzfvxetb2jk.streamlit.app
+This information may only become available after the booking is made or its outcome is known. Including it could give the model information that would not be available when making an actual prediction resulting in misleadingly high accuracy.
+
+### Steps Taken
+
+1. **Define target:** Used the five booking factors as inputs and the cancellation status (`is_canceled`) as the prediction target.
+2. **Split the data:** Divided the data into 70% for training and 30% for testing.
+3. **Train and evaluate the 3 models:** Tested Logistic Regression, Decision Tree and Random Forest to determine which could better predict cancellations.
+4. **Compare model performance:** Measured how accurately each model predicted cancellations including how many cancellations it correctly identified and how many predictions were incorrect.
+5. **Compared different feature:** Tested four combinations of booking factors using the same model and data split to see which combination produced the best results.
+6. **Deployed the final model:** Saved the Random Forest model and made it available through a Streamlit web application, allowing users to enter booking details and obtain a cancellation-risk prediction.
+    
+
+### Expected Outcome
+
+The predictive model can help hotels identify bookings with a higher risk of cancellation before guests arrive. This allows hotels to make more informed decisions about room availability, booking management and deposit policies to potentially reducing revenue losses from cancellations.
 
 
 <sub>[back to top](#tc)</sub>
