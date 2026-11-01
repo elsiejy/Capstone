@@ -61,6 +61,14 @@ The findings will help hotels make better decisions on booking management, depos
 5. **Market_Segments.csv** (26 rows)  
    Records how each booking was acquired: the market segment e.g. Online TA, Groups, Direct, Corporate and the distribution channel it came through e.g. TA/TO, Direct, GDS. This is used to identify which acquisition sources carry the highest cancellation risk.
 
+
+| Term          | Meaning                                                                                                                       |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **TA/TO**     | Through travel agents or tour operators, online or offline.                                                                   |
+| **Direct**    | Straight to the hotel.                                                                                                        |
+| **Corporate** | Through a company’s own travel booking arrangement.                                                                           |
+| **GDS**       | Large booking networks e.g., Amadeus, Sabre, Travelport that travel agents and airlines use to book hotels, flights and cars. |
+
 7. **Customer_Types.csv** (36 rows)  
    Combines the customer type (Transient, Transient-Party, Group, Contract), the deposit policy (No Deposit, Non Refund, Refundable) and the meal plan.
 
@@ -81,12 +89,7 @@ The findings will help hotels make better decisions on booking management, depos
 | **Aviation**      | Bookings linked to airlines, e.g. crew layovers or stranded passengers.                                                                                               |
 ##### Distribution channel (`distribution_channel`): the route the booking came through
 
-| Term          | Meaning                                                                                                                       |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **TA/TO**     | Through travel agents or tour operators, online or offline.                                                                   |
-| **Direct**    | Straight to the hotel.                                                                                                        |
-| **Corporate** | Through a company’s own travel booking arrangement.                                                                           |
-| **GDS**       | Large booking networks e.g., Amadeus, Sabre, Travelport that travel agents and airlines use to book hotels, flights and cars. |
+
 ##### Customer type (`customer_type`)
 
 | Term                | Meaning                                                                                                                        |
