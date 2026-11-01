@@ -20,7 +20,7 @@ The dataset comprises 119,390 hotel reservations across two hotel types: City Ho
 <sub>[back to top](#tc)</sub>
 ## 🤔 Problem statement <a name="problem"></a>
 
-Nearly 37% of bookings at a city hotel and a resort hotel were cancelled or ended in no-shows between July 2015 and August 2017, putting approximately $16.7 million of booked room revenue at risk, a third of it cancelled within 30 days of arrival. How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation risk and lost revenue, and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
+Nearly 37% of bookings at a city hotel and a resort hotel were cancelled or ended in no-shows between July 2015 and August 2017, putting approximately $16.7 million of booked room revenue at risk, a third of it cancelled within 30 days of arrival. How can hotels use historical booking data to identify the customer segments, booking channels, travel periods and booking characteristics associated with higher cancellation risk and lost revenue and develop a predictive model to identify bookings likely to be cancelled before guests arrive?
 
 The findings will help hotels make better decisions on booking management, deposit and cancellation policies, channel strategy and room availability (including overbooking) to reduce revenue losses.
 
