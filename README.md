@@ -62,8 +62,8 @@ The findings will help hotels make better decisions on booking management, depos
    Records how each booking was acquired: the market segment e.g. Online TA, Groups, Direct, Corporate and the distribution channel it came through e.g. TA/TO, Direct, GDS. This is used to identify which acquisition sources carry the highest cancellation risk.
 
    ##### Market segment (`market_segment`): who the booking came from
-
-   | Term              | Meaning                                                                                                                                                               |
+                                                                                             |
+| Term              | Meaning                                                                                                                                                               |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Online TA**     | Online travel agent, a booking website such as Booking.com, Expedia or Agoda.                                                                                         |
 | **Offline TA/TO** | Traditional travel agents (TA) and tour operators (TO) working by phone, email or in a shop. A tour operator packages hotel, transport and activities into a holiday. |
@@ -73,7 +73,7 @@ The findings will help hotels make better decisions on booking management, depos
 | **Complementary** | Free stays given by the hotel (e.g. to VIPs or partners, or as compensation). Often spelled “complimentary” outside this dataset.                                     |
 | **Aviation**      | Bookings linked to airlines, e.g. crew layovers or stranded passengers.                                                                                               |
 
-##### Distribution channel (`distribution_channel`): the route the booking came through
+   ##### Distribution channel (`distribution_channel`): the route the booking came through
 
 | Term          | Meaning                                                                                                                       |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
