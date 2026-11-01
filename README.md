@@ -61,8 +61,7 @@ The findings will help hotels make better decisions on booking management, depos
 5. **Market_Segments.csv** (26 rows)  
    Records how each booking was acquired: the market segment e.g. Online TA, Groups, Direct, Corporate and the distribution channel it came through e.g. TA/TO, Direct, GDS. This is used to identify which acquisition sources carry the highest cancellation risk.
 
-   ##### Market segment (`market_segment`): who the booking came from
-                                                                                             |
+   ##### Market segment (`market_segment`): who the booking came from                                                        |
 | Term              | Meaning                                                                                                                                                               |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Online TA**     | Online travel agent, a booking website such as Booking.com, Expedia or Agoda.                                                                                         |
