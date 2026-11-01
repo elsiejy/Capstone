@@ -52,57 +52,56 @@ The findings will help hotels make better decisions on booking management, depos
 
 ### Data dictionary
 
-1. **Bookings.csv** (119,390 rows, one per reservation)  
-   The main fact table and the source of the target variable `is_canceled` (1 = cancelled or no-show). It holds the booking characteristics such as lead time, arrival date, length of stay, party composition, repeat-guest history, booking changes, special requests, waiting-list days and average daily rate. It links to the four reference tables through `Hotel_ID`, `Market_Segment_ID`, `Customer_Type_ID` and `Reservation_ID`.
+The dataset consists of one booking-level fact table and four reference tables. Together, they describe hotel reservations, how they were made, the type of customer, and their final outcome.
 
-3. **Hotels.csv** (2 rows)  
-   Identifies each booking's hotel type (City Hotel or Resort Hotel) so cancellation rates and risk profiles can be compared between the two properties.
+| File | Rows | Grain / purpose |
+| --- | ---: | --- |
+| **Bookings.csv** | 119,390 | One row per reservation. This is the main fact table and contains the target variable, `is_canceled` (`1` = cancelled or no-show). It includes booking characteristics such as lead time, arrival date, length of stay, party composition, repeat-guest history, booking changes, special requests, waiting-list days, and average daily rate. It links to the reference tables through `Hotel_ID`, `Market_Segment_ID`, `Customer_Type_ID`, and `Reservation_ID`. |
+| **Hotels.csv** | 2 | Identifies the hotel for each booking: **City Hotel** or **Resort Hotel**. This enables comparisons of cancellation rates and risk profiles between the two properties. |
+| **Market_Segments.csv** | 26 | Describes how a booking was acquired, including its market segment (for example, Online TA, Groups, Direct, or Corporate) and distribution channel (for example, TA/TO, Direct, or GDS). Use it to assess cancellation risk by acquisition source. |
+| **Customer_Types.csv** | 36 | Combines the customer type (Transient, Transient-Party, Group, or Contract), deposit policy (No Deposit, Non Refund, or Refundable), and meal plan. |
+| **Reservation_Status.csv** | 3 | Records the final booking outcome: Check-Out, Canceled, or No-Show. |
 
-5. **Market_Segments.csv** (26 rows)  
-   Records how each booking was acquired: the market segment e.g. Online TA, Groups, Direct, Corporate and the distribution channel it came through e.g. TA/TO, Direct, GDS. This is used to identify which acquisition sources carry the highest cancellation risk.
+#### Definitions
 
-   ##### Market segment (`market_segment`): who the booking came from                                                        |
-| Term              | Meaning                                                                                                                                                               |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Online TA**     | Online travel agent, a booking website such as Booking.com, Expedia or Agoda.                                                                                         |
-| **Offline TA/TO** | Traditional travel agents (TA) and tour operators (TO) working by phone, email or in a shop. A tour operator packages hotel, transport and activities into a holiday. |
-| **Groups**        | A block of rooms booked together for one event or party e.g., a tour group, wedding or conference.                                                                    |
-| **Direct**        | The guest booked with the hotel itself (hotel website, phone, email, walk-in) with no middleman.                                                                      |
-| **Corporate**     | Bookings made by or for companies - often at negotiated business rates.                                                                                               |
-| **Complementary** | Free stays given by the hotel (e.g. to VIPs or partners, or as compensation). Often spelled “complimentary” outside this dataset.                                     |
-| **Aviation**      | Bookings linked to airlines, e.g. crew layovers or stranded passengers.                                                                                               |
+##### Market segment (`market_segment`): who the booking came from
 
-   ##### Distribution channel (`distribution_channel`): the route the booking came through
+| Term | Meaning |
+| --- | --- |
+| **Online TA** | An online travel agent: a booking website such as Booking.com, Expedia, or Agoda. |
+| **Offline TA/TO** | Traditional travel agents (TA) and tour operators (TO) working by phone, email, or in person. A tour operator typically bundles accommodation, transport, and activities into a holiday package. |
+| **Groups** | A block of rooms booked together for an event or party, such as a tour group, wedding, or conference. |
+| **Direct** | The guest booked directly with the hotel—through the hotel website, by phone or email, or as a walk-in—with no intermediary. |
+| **Corporate** | A booking made by or for a company, often at a negotiated business rate. |
+| **Complementary** | A complimentary stay provided by the hotel, for example to a VIP or partner, or as compensation. The term is commonly spelled *complimentary* outside this dataset. |
+| **Aviation** | A booking associated with an airline, such as a crew layover or accommodation for disrupted passengers. |
 
-| Term          | Meaning                                                                                                                       |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **TA/TO**     | Through travel agents or tour operators, online or offline.                                                                   |
-| **Direct**    | Straight to the hotel.                                                                                                        |
-| **Corporate** | Through a company’s own travel booking arrangement.                                                                           |
-| **GDS**       | Large booking networks e.g., Amadeus, Sabre, Travelport that travel agents and airlines use to book hotels, flights and cars. |
+##### Distribution channel (`distribution_channel`): the route the booking came through
 
-7. **Customer_Types.csv** (36 rows)  
-   Combines the customer type (Transient, Transient-Party, Group, Contract), the deposit policy (No Deposit, Non Refund, Refundable) and the meal plan.
+| Term | Meaning |
+| --- | --- |
+| **TA/TO** | A booking made through a travel agent or tour operator, online or offline. |
+| **Direct** | A booking made straight with the hotel. |
+| **Corporate** | A booking made through a company's travel-booking arrangement. |
+| **GDS** | A global distribution system—such as Amadeus, Sabre, or Travelport—used by travel agents and airlines to book hotels, flights, and cars. |
 
-   ##### Customer type (`customer_type`)
+##### Customer type (`customer_type`)
 
-| Term                | Meaning                                                                                                                        |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Transient**       | An individual booking that isn’t part of a group or contract. Typically a short-stay leisure or business traveller.            |
-| **Transient-Party** | A transient booking linked to at least one other transient booking, e.g. two couples travelling together on separate bookings. |
-| **Group**           | Part of a group booking.                                                                                                       |
-| **Contract**        | Covered by an allotment or other contract between the hotel and a company or agent                                             |
+| Term | Meaning |
+| --- | --- |
+| **Transient** | An individual booking that is not part of a group or contract, typically for a short-stay leisure or business traveller. |
+| **Transient-Party** | A transient booking connected to one or more other transient bookings, such as two couples travelling together on separate reservations. |
+| **Group** | A booking that forms part of a group reservation. |
+| **Contract** | A booking covered by an allotment or another contract between the hotel and a company or agent. |
+
 #### Meal plan (`meal`)
 
-| Term   | Meaning                                                    |
-| ------ | ---------------------------------------------------------- |
-| **BB** | Bed & Breakfast: room plus breakfast.                      |
+| Term | Meaning |
+| --- | --- |
+| **BB** | Bed & Breakfast: room plus breakfast. |
 | **HB** | Half Board: breakfast plus one other meal, usually dinner. |
-| **FB** | Full Board: breakfast, lunch and dinner.                   |
-| **SC** | Self Catering: room only, no meals.                        |
-
-9. **Reservation_Status.csv** (3 rows)  
-    The final outcome of each booking: Check-Out, Canceled or No-Show.
+| **FB** | Full Board: breakfast, lunch, and dinner. |
+| **SC** | Self Catering: room only, with no meals included. |
 
 <sub>[back to top](#tc)</sub>
 
