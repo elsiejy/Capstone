@@ -122,6 +122,8 @@ The dataset consists of one booking-level fact table and four reference tables. 
      - Update data type for children, agent and company to int
      - Handle NULL values for children, country, agent, company
 
+👉 Link to notebook: [Click here](https://colab.research.google.com/drive/1Y8gGSAlk2l9vWh7TfaHs5cKxhtoJ1xW5?usp=sharing)
+
 ## 📈 Power BI Dashboard <a name="dashboard"></a>
 
 <img width="1156" height="651" alt="image" src="https://github.com/user-attachments/assets/c8b79046-00fd-4d3c-be4a-fff56635a3d8" />
