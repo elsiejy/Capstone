@@ -65,13 +65,13 @@ The findings will help hotels make better decisions on booking management, depos
 
    | Term              | Meaning                                                                                                                                                               |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Online TA**     | Online travel agent e.g., booking website such as Booking.com, Expedia or Agoda.                                                                                         |
+| **Online TA**     | Online travel agent, a booking website such as Booking.com, Expedia or Agoda.                                                                                         |
 | **Offline TA/TO** | Traditional travel agents (TA) and tour operators (TO) working by phone, email or in a shop. A tour operator packages hotel, transport and activities into a holiday. |
 | **Groups**        | A block of rooms booked together for one event or party e.g., a tour group, wedding or conference.                                                                    |
 | **Direct**        | The guest booked with the hotel itself (hotel website, phone, email, walk-in) with no middleman.                                                                      |
 | **Corporate**     | Bookings made by or for companies - often at negotiated business rates.                                                                                               |
 | **Complementary** | Free stays given by the hotel (e.g. to VIPs or partners, or as compensation). Often spelled “complimentary” outside this dataset.                                     |
-| **Aviation**      | Bookings linked to airlines, e.g. crew layovers or stranded passengers. 
+| **Aviation**      | Bookings linked to airlines, e.g. crew layovers or stranded passengers.                                                                                               |
 
 ##### Distribution channel (`distribution_channel`): the route the booking came through
 
